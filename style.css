@@ -1,0 +1,430 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+
+/*  Menu  */
+
+.menu{
+    background-image: url('menu3.png');
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+    position: fixed;
+    flex-wrap: wrap;
+    top: 50px;
+    left: 1550px;
+    width:70px;
+    height: 65px;
+    z-index: 1000;
+    cursor: pointer;
+}
+.menu.active{
+    background-image: url('close.png');
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60px;
+}
+
+/*  First Section and Image Container */
+.first-section{
+    width: 100%;
+    
+}
+
+.first-section .image-container{
+    min-height: 100vh;
+    height: 100%;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.first-section .image-container img{
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+}
+/*  First Section and main contents */
+.first-section .main-content
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    left: 700px;
+    top: 50px;
+    height: 100%;
+    width: calc(100% - 900px);
+}
+/*  First Section main contents and banner */
+.first-section .main-content .banner{
+    position: absolute;
+    left: 100px;
+    top: 0;
+    background-color: rgb(43, 40, 40);
+    width: 200px;
+    height: 20px;
+    padding: 7px;
+    text-align: center;
+
+}
+.first-section .main-content .banner h5{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/*  First Section, main contents and contents */
+.first-section .main-content .content{
+    position: relative;
+    top: 100px;
+}
+.first-section .main-content .content h5 span{
+    font-size: 40px;
+    font-weight: 600;
+    color: aqua;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.first-section .main-content .content h5{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(88, 86, 86);
+}
+.first-section .main-content .content h1{
+    font-weight:bolder;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+.first-section .main-content .content h4{
+    font-size: 28px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(61, 58, 58);
+    margin-bottom: 40px;
+}
+.first-section .main-content .content p{
+    font-size: 20px;
+    color: rgb(71, 67, 67);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+/*  First Section,main contents and About Me */
+.first-section .main-content .aboutMe{
+    width: 150px;
+    height: 30px;
+    background-color:rgb(31, 238, 238);
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 80px;
+}
+.first-section .main-content .aboutMe a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/*  First Section, main content and Social Media Icons*/
+.first-section .main-content .social ul{
+    display: flex;
+}
+.first-section .main-content .social ul li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+.first-section .main-content .social ul li img{
+    width: 60px;
+    height: 60px;
+}
+/*  Sidebar and its contents*/
+.sidebar{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    top:0;
+    right: -1000px;
+    height: 100%;
+    width: calc(100% - 900px);
+}
+.sidebar{
+    position: fixed;
+    background-color: black;
+    transition: 2s;
+    z-index: 100;
+}
+.sidebar ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    font-size: 34px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidebar ul li a:hover{
+    color: aquamarine;
+}
+.sidebar.active{
+    right: 0px;
+}
+
+/*  About Section  */
+
+.about{
+     background-image: url('/images/img8.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    margin-top: 46px;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+.about .header{
+    margin-top: 100px;
+    text-align: center;
+    border-bottom: 3px solid white;
+}
+.about .header h2{
+   
+    font-size: 34px;
+    color: white;
+}
+/*  About Section under about contents */
+.about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.about-content .about-text{
+    color: white;
+}
+.about-content .about-text p{
+    font-size: 18px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+margin-bottom: 50PX;
+}
+
+/*  About Section under about image */
+
+.about .about-content .about-img img{
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    box-sizing: 0px 12px 4px 0px;
+    border-radius: 10px;
+}
+
+/*  Our Services Section  */
+
+.our-services{
+    width: 100%;
+    min-height: 100vh;
+}
+.our-services .services-container{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.our-services .services-container .services-header{
+    text-align: center;
+}
+.our-services .services-container .services-header h3{
+    font-size: 38px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(35, 240, 240);
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+.our-services .services-container .services-header p{
+    font-size: 20px;
+    color: rgb(48, 46, 46);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Services Container under Services Content */
+
+.our-services .services-container .services-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.our-services .services-container .services-content .service-flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    width: 350px;
+    height: 350px;
+    background-color:rgb(211, 238, 238);
+    color: black;
+    padding: 30px;
+}
+.our-services .services-container .services-content .service-flexbox:hover{
+    background-color: black;
+    color: rgb(248, 242, 242);
+}
+.our-services .services-container .services-content .service-flexbox img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+.our-services .services-container .services-content .service-flexbox h5{
+    font-size: 28px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+.our-services .services-container .services-content .service-flexbox p{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(87, 85, 85);
+    font-weight: bolder;
+}
+/*  Recent Work Section  */
+
+.recent-work{
+    width: 100%;
+    min-height: 100vh;
+}
+.recent-work .recent-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*  Recent Work Section  Header Section */
+.recent-work .recent-container .recent-header{
+    text-align: center;
+    padding-top: 40px;
+}
+.recent-work .recent-container .recent-header h3{
+    padding-bottom: 20px;
+    font-size: 38px;
+    color: aqua;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.recent-work .recent-container .recent-header p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(49, 47, 47);
+}
+
+/*  Recent Work Section  Image Gallary Section */
+
+.recent-work .recent-container .recent-imagegallary{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+
+}
+.recent-work .recent-container .recent-imagegallary .images{
+    margin:20px;
+}
+.recent-work .recent-container .recent-imagegallary .images img{
+    width: 300px;
+    height: 300px;
+    transition: 1s;
+}
+.recent-work .recent-container .recent-imagegallary .images img:hover{
+    transform: rotateY(200deg);
+}
+
+/*  Contact Us  Section */
+.Contact-Us{
+   /* background-image: url('/images/img8.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    */
+    background-color:black;
+    width: 100%;
+    min-height: 100vh;
+    
+}
+.Contact-Us .contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+/*  Contact Us Section Contact us header */
+
+.Contact-Us .contact-container .contact-header{
+    text-align: center;
+}
+.Contact-Us .contact-container .contact-header h3{
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.Contact-Us .contact-container .contact-header p{
+    font-size: 20px;
+    color: white;
+}
+
+/*  Contact Us Section Contact us Form */
+.Contact-Us .contact-container .contact-form form{
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-left: 250px;
+}
+.Contact-Us .contact-container .contact-form form input{
+    margin-left: 50px;
+    width: 500px;
+    height: 60px;
+    color: white;
+    font-weight: bolder;
+    background: black;
+    font-size: 18px;
+    padding-left: 30px;
+    margin-bottom: 30px;
+    border-style: none;
+}
+.Contact-Us .contact-container button{
+    margin-left: 950px;
+    width: 180px;
+    height: 60px;
+    color: white;
+    background-color: rgb(35, 219, 219);
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    border-style: none;
+    box-shadow: 0px 0px 4px 4px black;
+}
+
+
+
